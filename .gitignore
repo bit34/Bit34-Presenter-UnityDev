@@ -1,5 +1,13 @@
-/Assets/Bit34/
-/Assets/Bit34.meta
+# Bit34 Package Manager
+#   Packages/   — where the tool clones the resolved dependencies
+#   PackageDev/ — a working clone of this library's own source repo, which
+#                 Unity compiles directly so the library can be developed
+#                 in place. Both are materialized per machine; the tool's
+#                 two config files are project state and stay in the repo.
+Assets/Bit34/Packages/
+Assets/Bit34/Packages.meta
+Assets/Bit34/PackageDev/
+Assets/Bit34/PackageDev.meta
 
 # ===============
 # Unity generated
@@ -53,5 +61,3 @@ ehthumbs.db
 [Tt]humbs.db
 
 
-Assets/Libraries/Presenter/
-Assets/Libraries/Presenter.meta
