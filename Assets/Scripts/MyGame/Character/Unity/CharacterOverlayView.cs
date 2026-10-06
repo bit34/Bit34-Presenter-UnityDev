@@ -5,7 +5,7 @@ using Com.Bit34Games.Presenter.Unity;
 
 namespace MyGame.Character.Unity
 {
-    public class CharacterOverlayView : BasePresenterView, 
+    public class CharacterOverlayView : OverlayView, 
                                         ICharacterOverlayView
     {
         //  MEMBERS

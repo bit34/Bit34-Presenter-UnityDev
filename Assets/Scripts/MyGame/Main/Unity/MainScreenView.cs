@@ -5,7 +5,7 @@ using Com.Bit34Games.Presenter.Unity;
 
 namespace MyGame.Main.Unity
 {
-    public class MainScreenView : BasePresenterView, 
+    public class MainScreenView : ScreenView, 
                                   IMainScreenView
     {
         //  MEMBERS

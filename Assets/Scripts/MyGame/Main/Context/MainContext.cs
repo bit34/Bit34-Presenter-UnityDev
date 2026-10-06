@@ -1,12 +1,13 @@
 using UnityEngine;
 using Com.Bit34Games.Director.Unity;
-using Com.Bit34Games.Presenter.Commands;
 using Com.Bit34Games.Presenter.Utilities;
 using MyGame.Character.Context;
 using MyGame.Ground.Context;
 using MyGame.Main.Unity;
 using MyGame.Main.Signals;
 using MyGame.Main.Constants;
+using Com.Bit34Games.Presenter.Context;
+using Com.Bit34Games.Presenter.VOs;
 
 namespace MyGame.Main.Context
 {
@@ -55,17 +56,17 @@ namespace MyGame.Main.Context
 
         private void LoadPresenterResources()
         {
-            _sceneRefs.PresenterManager.AddScreenPrefab(ResourceNames.MainScreen,        _resourceRefs.MainScreenViewPrefab);
-            _sceneRefs.PresenterManager.AddOverlayPrefab(ResourceNames.CharacterOverlay, _resourceRefs.CharacterOverlayViewPrefab);
+            _sceneRefs.PresenterManager.LoadAsset(_resourceRefs.MainScreenViewAsset);
+            _sceneRefs.PresenterManager.LoadAsset(_resourceRefs.CharacterOverlayViewAsset);
         }
 
         private void CreateViews()
         {
             PresenterOperations presenterOperations = Injector.GetInstance<PresenterOperations>();
-            presenterOperations.ShowScreenAtTop(ResourceNames.MainScreen);
+            presenterOperations.OpenScreen(ResourceNames.MainScreen);
             presenterOperations.CreateOverlay(ResourceNames.CharacterOverlay);
 
-            GameObject.Instantiate(_resourceRefs.CharactersViewPrefab,      _sceneRefs.WorldContainer);
+            GameObject.Instantiate(_resourceRefs.CharactersViewAsset,      _sceneRefs.WorldContainer);
         }
 
         private void LoadData()
