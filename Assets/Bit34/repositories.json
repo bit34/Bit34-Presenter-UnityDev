@@ -15,6 +15,10 @@
         {
             "name" : "com.bit34games.graph",
             "url" : "https://github.com/bit34/Bit34-Graph-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.presenterelements",
+            "url" : "https://github.com/bit34/Bit34-PresenterElements-UPM.git"
         }
     ]
 }
