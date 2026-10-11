@@ -19,6 +19,10 @@
         {
             "name" : "com.bit34games.presenterelements",
             "url" : "https://github.com/bit34/Bit34-PresenterElements-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.audio",
+            "url" : "https://github.com/bit34/Bit34-Audio-UPM.git"
         }
     ]
 }
