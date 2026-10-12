@@ -1,7 +1,7 @@
 {
     "dependencies":
     {
-        "com.bit34games.director": "1.2.0",
+        "com.bit34games.director": "2.0.0",
         "com.bit34games.audio": "0.2.0"
     }
 }
